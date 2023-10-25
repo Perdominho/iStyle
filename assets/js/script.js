@@ -157,3 +157,28 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// whatsapp
+const toggleButton = document.getElementById('toggleButton');
+const whatsappLogo = document.getElementById('whatsappLogo');
+const crossLogo = document.getElementById('crossLogo');
+const popup = document.getElementById('popup');
+
+let isWhatsappActive = false;
+
+toggleButton.addEventListener('click', () => {
+    isWhatsappActive = !isWhatsappActive;
+    
+    if (isWhatsappActive) {
+        whatsappLogo.style.display = 'none';
+        crossLogo.style.display = 'block';
+        popup.style.display = 'block';
+    } else {
+        whatsappLogo.style.display = 'block';
+        crossLogo.style.display = 'none';
+        popup.style.display = 'none';
+    }
+});
+
+
+

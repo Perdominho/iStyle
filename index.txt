@@ -23,7 +23,6 @@ Sacramento, California, USA
 # navbar
 
 About
-Resume
 Portfolio
 Blog
 Contact
